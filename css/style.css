@@ -1,0 +1,278 @@
+/* Import google font 'Rancho' */
+@import url(https://fonts.googleapis.com/css2?family=Rancho&display=swap);
+
+/* Below is CSS Reset from meyerweb*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Styling */
+
+/* Set up smooth scroll for website */
+html {
+    scroll-behavior: smooth;
+}
+
+/* box-sizing for Chrome, Safari, Firefox */
+*, *::before, *::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* placeholder's color */
+*::placeholder{
+    color: #959595;
+}
+
+/* remove hyperlink's default decoration */
+a{
+    text-decoration: none;
+}
+
+/* Header section */
+.header{
+    background: rgba(180, 180, 180, 0.7);
+    position: fixed;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+/* Logo styling */
+.logo{
+    display: block;
+    width: 130px;
+    height: 75px;
+    background: url(https://i.imgur.com/xhVKtEq.png) center no-repeat;
+    background-size: 400px 400px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+/* hover effect animation for Logo */
+.logo::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid rgb(82, 82, 82);
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    transform: scale(0);
+    transition: 0.2s ease-in-out;
+}
+
+.logo:hover::after{
+    transform: scale(1);
+}
+
+/* Using absolute to let the nav bar position on the top right corner */
+nav{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+/* using inline to let the navigation link stay side by side */
+.nav-bar li{
+    display: inline;
+    margin: 0 10px;
+}
+
+/* nav bar hyperlink styling */
+.nav-bar li a{
+    color: rgb(57, 57, 57);
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* nav bar hyperlink hover effect */
+.nav-bar li a:hover{
+    color: #858585;
+}
+
+/* Banner's background */
+.banner{
+    height: 100vh;
+    background: url(https://i.imgur.com/GX3hvxc.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Greeting statement */
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    text-indent: -3rem;
+    line-height: 5rem;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 0.5rem;
+}
+
+/* Main content's background color */
+.main-content{
+    background: linear-gradient(45deg,rgb(158, 158, 158),rgb(235, 235, 235),rgb(202, 202, 202));
+}
+
+/* Space setting for about-me and contact-me */
+.about-me,
+.contact-me{
+    padding: 60px 70px;
+}
+
+/* Subtitle setting for about-me and contact-me */
+.about-me h2,
+.contact-me h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Rancho';
+    letter-spacing: 4px;
+}
+
+/* Using flex to horizontally center the elements */
+.about-me-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Width for profile picture */
+.profile-pic{
+    width: 320px;    
+}
+
+/* paragraph of myself */
+.about-me-para{
+    font-size: 20px;
+    font-weight:bold;
+    line-height: 2.2rem;
+    margin: 50px;
+}
+
+/* using flex to center the form */
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+/* using column for the vertical arrangement */
+.contact-form{
+    display: flex;
+    flex-direction:column;
+}
+
+/* contact form label's setting */
+.contact-form label{
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+/* contact form input's setting */
+.contact-form input{
+    display: block;
+    width: 80%;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+/* textarea's styling */
+.contact-form textarea{
+    resize: none;
+    margin: 30px 0px;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+/* submit button */
+#send-btn{
+    width: auto;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: #fff;
+    background: rgb(134, 134, 134);
+    box-shadow: 2px 2.5px 3px 1px rgba(145, 145, 145,0.8);
+    letter-spacing: 0.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/* hover effect for submit btn */
+#send-btn:hover{
+    cursor: pointer;
+}
+
+/* using active to achieve click effect */
+#send-btn:active{
+    box-shadow: 1.8px 1.8px 1.5px 0.3px rgba(145, 145, 145,0.8);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Copy right styling */
+.footer-cp-right{
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+    background: rgb(125, 125, 125);
+}
