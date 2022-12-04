@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header section -->
+        <header class="header">
+            <!-- My Logo -->
+            <h1><a href="#" class="logo">Sheon</a></h1>
+            <!-- Navigation bar -->
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Banner with the background -->
+        <section class="banner">
+            <!-- Greeting statement  -->
+            <div class="title">
+                <h2>Hi I am Sheon<br>A Web Developer </h2>
+            </div>
+        </section>
+        <!-- Main content -->
+        <main class="main-content">
+            <!-- About me section -->
+            <section class="about-me" id="about-me">
+                <h2>About Me</h2>
+                <div class="about-me-content">
+                    <!-- My profile picture -->
+                    <figure>
+                        <img class="profile-pic" src="https://i.imgur.com/2u331WT.jpg" alt="Profile picture">
+                    </figure>
+                    <!-- introduce myself  -->
+                    <article>
+                        <p class="about-me-para">
+                            Life is short and full of adventures, be enthusiastic to every things you love. 
+                            I like basketball, workout, hiking, cooking and of course coding! 
+                            And I always stay ambitious, trying to learn something new, gain from mistakes and improve myself.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+            <!-- Contact-me section -->
+            <section class="contact-me" id="contact-me">
+                <h2>Contact Me</h2>
+                <!-- contact form -->
+                <div class="form">
+                    <form action="index.html" class="contact-form">
+                        <!-- name input -->
+                        <div class="contact-name">
+                            <label for="name">Name:</label>
+                            <input type="name" id="name" name="name" placeholder="Your name.." required>
+                        </div>
+                        <!-- email input -->
+                        <div class="contact-email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        </div>
+                        <!-- message area -->
+                        <textarea name="message" id="message" cols="60" rows="15" placeholder="Leave your message here.." required></textarea>
+                        <!-- Submit button -->
+                        <div class="btn">
+                            <input id="send-btn" type="submit" value="Send">
+                        </div>
+                    </form>    
+                </div>
+            </section>
+        </main>
+        <!-- Footer section -->
+        <footer class="fxooter">
+            <!-- Copy right -->
+            <div class="footer-cp-right">
+                <span>Copyright &copy; 2022 All Right Reserved</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
